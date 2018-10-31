@@ -1,0 +1,86 @@
+.swiper-container 
+  height: 380px
+
+.swiper-slide-active
+  border: 13px solid rgba(0, 150, 199, 0.44) !important
+
+.prev,
+.next
+  z-index: 10
+  width: 65px !important
+  height: 123px !important
+  background-size: 65px 123px
+  border: 1px solid white
+
+.prev
+  top: 50%
+  left: 0
+  margin-top: -50px
+
+.next
+  top: 50%
+  right: 0
+  margin-top: -50px
+
+@media(min-width: 576px)
+
+  .swiper-container 
+    height: 500px
+
+  .swiper-slide
+    padding-left: 40px
+    padding-right: 40px
+
+@media(min-width: 768px)
+
+  .swiper-container 
+    width: 540px
+
+@media(min-width: 1200px)
+
+  .swiper-container 
+    width: 1140px
+    height: 533px
+
+  .swiper-slide-next~.slide,
+  .swiper-slide-active
+    width: 319px !important
+
+  .swiper-slide-next
+    width: 500px !important
+
+  .swiper-slide-active
+    border: none !important
+
+  .swiper-slide-next .slide__descr,
+  .swiper-slide-next .slide__text
+    display: block !important
+    
+  .swiper-slide-next .slide__text
+    padding-right: 40px
+    padding-left: 40px
+
+  .swiper-slide-next.slide
+    border: 13px solid rgba(0, 150, 199, 0.44) !important
+
+  .swiper-slide-next .slide__name
+    font-size: 36px
+
+  .swiper-slide-next
+    img
+      width: 200px !important
+      height: 200px !important
+
+@media(min-width: 1640px)
+
+  .swiper-container 
+    width: 1420px
+    height: 533px !important
+
+  .swiper-slide-next~.slide,
+  .swiper-slide-active
+    width: 412px !important
+
+  .swiper-slide-next
+    width: 593px !important
+

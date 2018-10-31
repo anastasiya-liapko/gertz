@@ -8,7 +8,9 @@
 
     <!-- <link rel="shortcut icon" href="img/favicon.png" type="image/png"> -->
 
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:200,400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:200,400,500,700|Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
@@ -22,10 +24,11 @@
   <body>
     <div class="page">
       <div class="header">
-        <div class="container">
-        <nav class="navbar navbar-expand-sm d-flex flex-wrap">
+        <div class="header__wrapper container d-flex flex-wrap justify-content-between align-items-center">
+        
+        <nav class="header__navbar navbar navbar-expand-sm container d-flex flex-sm-wrap flex-xl-nowrap justify-content-between justify-content-xl-start align-items-center">
 
-          <a class="navbar-brand order-sm-1" href="#">
+          <a class="navbar-brand p-0" href="#">
             <img src="img/logo.png" width="751" height="167">
           </a>
 
@@ -33,46 +36,522 @@
             <span class="navbar-toggler-icon"></span>
           </button>
 
-          <div class="collapse navbar-collapse order-sm-3" id="navbarSupportedContent">
-            <ul class="navbar-nav">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav d-flex justify-content-between w-100">
               <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link link text-center pl-0 pr-0" href="#">Главная <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link link text-center pl-0 pr-0" href="#">Вакансии</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link link text-center pl-0 pr-0" href="#">Услуги и цены</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link disabled" href="#">Disabled</a>
+                <a class="nav-link link text-center pl-0 pr-0" href="#">Документы</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link disabled" href="#">Disabled</a>
+                <a class="nav-link link text-center pl-0 pr-0" href="#">Контакты</a>
               </li>
             </ul>
           </div>
-
-          <div class="navbar-btn order-sm-2">
-          </div>
-
         </nav>
-      </div>
+
+        <div class="header__btn container">
+          <button class="btn btn_red">Заявка на получение визы</button>
+        </div>
+
+        </div>
+
       </div>
       <!-- header -->
 
       <div class="main">
-        <div class="descr position-relative">
-          <div class="descr__background-gradient position-absolute">
-          </div>
-          <div class="descr__background-img position-absolute">
-            <img src="img/descr-background.png" width="1920" height="1080">
-          </div>
-          <div class="container descr__container" style="border: 1px solid red;">
+
+        <div class="descr">
+          <!-- <div class="descr__background-gradient position-absolute">
+          </div> -->
+          <!-- <div class="descr__background position-relative">
+            <img class="position-absolute" src="img/descr-background.png" width="1920" height="1080">
+          </div> -->
+          <div class="descr__container container d-flex flex-column flex-xl-row justify-content-between">
+            <div class="descr__wrapper position-relative mr-5">
+
+              <div class="descr__border border"></div>
+
+              <div class="descr__title title position-absolute">
+                <span class="title__blue d-block text-right mr-xl-5">Получение визы на ПМЖ </span>
+                <span class="title__white d-block text-left">в Израиль без отказов</span>
+              </div>
+
+              <div class="descr__text text position-absolute">
+                <span class="d-block">сэкономьте ваше</span>
+                <span class="d-block"> время и нервы</span>
+              </div> 
+
+            </div>
+
+            <div class="descr__phones d-flex align-items-center justify-content-center">
+              
+              <div class="phones d-flex align-items-center">
+                <span class="phones__icon icon d-block"></span>
+                <div>
+                  <a class="phones__link link d-block text-center">+7 (495) 234-43-34</a>
+                  <a class="phones__link link d-block text-center">+7 (495) 234-43-34</a>
+                </div>
+              </div>
+            </div>
 
           </div>
         </div>
         <!-- descr -->
+
+        <div class="opportunities__wrapper mt-2 mt-xl-5">
+
+          <div class="d-flex mb-4">
+
+            <div class="line d-none d-lg-flex align-items-center">
+              <span class="d-block"></span>
+            </div>
+
+            <div class="heading d-flex align-items-center justify-content-center">
+              <span class="d-block">Возможности гражданина Израиля</span>
+            </div>
+
+            <div class="empty d-none d-lg-block"></div>
+          </div>
+          
+          <div class="opportunities">
+            
+            <div class="opportunities__container d-flex flex-wrap align-content-start justify-content-center">
+
+            <div class="opportunities__item opportunities__item_light d-flex flex-column justify-content-start align-items-center">
+              <span class="opportunities__icon icon d-inline-block"></span>
+              <span class="opportunities__text d-inline-block text-center">Право приобретения недвижимости в Израиле</span>
+            </div>
+
+            <div class="opportunities__item opportunities__item_dark d-flex flex-column justify-content-start align-items-center">
+              <span class="opportunities__icon icon d-inline-block"></span>
+              <span class="opportunities__text d-inline-block text-center">Упрощенное получение гражданства США и стран Европы</span>
+            </div>
+
+            <div class="opportunities__item d-none d-sm-flex flex-column justify-content-start align-items-center d-none d-sm-block">
+            </div>
+
+            <div class="opportunities__item d-none d-sm-flex flex-column justify-content-start align-items-center d-none d-sm-block">
+            </div>
+
+            <div class="opportunities__item opportunities__item_light d-flex flex-column justify-content-start align-items-center">
+              <span class="opportunities__icon icon d-inline-block"></span>
+              <span class="opportunities__text d-inline-block text-center">Пользоваться всеми преимуществами современной медицины</span>
+            </div>
+
+            <div class="opportunities__item opportunities__item_dark d-flex flex-column justify-content-start align-items-center">
+              <span class="opportunities__icon icon d-inline-block"></span>
+              <span class="opportunities__text d-inline-block text-center">Путешествовать более чем по сотне европейских стран без оформления виз</span>
+            </div>
+
+            <div class="opportunities__item opportunities__item_light d-flex flex-column justify-content-start align-items-center">
+              <span class="opportunities__icon icon d-inline-block"></span>
+              <span class="opportunities__text d-inline-block text-center">Защита от экстрадиции</span>
+            </div>
+
+            <div class="opportunities__item opportunities__item_dark d-flex flex-column justify-content-start align-items-center">
+              <span class="opportunities__icon icon d-inline-block"></span>
+              <span class="opportunities__text d-inline-block text-center">Возможность осуществлять деятельность в сфере бизнеса</span>
+            </div>
+
+            <div class="opportunities__item opportunities__item_light d-flex flex-column justify-content-start align-items-center">
+              <span class="opportunities__icon icon d-inline-block"></span>
+              <span class="opportunities__text d-inline-block text-center">Ноль процентов налогов на ведение бизнеса в любой стране 10 лет</span>
+            </div>
+
+          </div>
+    
+          </div>
+          <!-- opportunities -->
+
+        </div>
+        <!-- opportunities__wrapper -->
+
+        <div class="reviews">
+          <div class="container position-relative">
+
+            <div class="d-flex justify-content-center reviews__btn align-items-center">
+              <div class="btn btn_blue">отзывы</div>
+            </div>
+
+            <!-- Slider main container -->
+            <div class="swiper-container">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+
+                    <!-- Slides -->
+                    <div class="swiper-slide slide d-flex align-items-center">
+                      <div class="slide__wrapper d-flex flex-column align-items-center w-100">
+                        <div>
+                          <img class="slide__img" src="img/slider-1@2x.png" srcset="img/slider-1@2x.png 2x, img/slider-1@3x.png 3x" width="100" height="100">
+                        </div>
+                        <div class="slide__name mb-2">
+                          <span class="d-block">Константин</span>
+                          <span class="d-block text-center">Шлыков</span>
+                        </div>
+                        <div class="slide__descr d-xl-none text-center">Специалист по вопросам получения визы</div>
+                        <div class="slide__text text-center d-xl-none">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis</div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide slide d-flex align-items-center">
+                      <div class="slide__wrapper d-flex flex-column align-items-center w-100">
+                        <div>
+                          <img class="slide__img" src="img/slider-2.png" srcset="img/slider-2@2x.png 2x, img/slider-2@3x.png 3x" width="100" height="100">
+                        </div>
+                        <div class="slide__name mb-2">
+                          <span class="d-block">Константин</span>
+                          <span class="d-block text-center">Шлыков</span>
+                        </div>
+                        <div class="slide__descr d-xl-none text-center">Специалист по вопросам получения визы</div>
+                        <div class="slide__text text-center d-xl-none">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis</div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide slide d-flex align-items-center">
+                      <div class="slide__wrapper d-flex flex-column align-items-center w-100">
+                        <div>
+                          <img class="slide__img" src="img/slider-1@2x.png" srcset="img/slider-1@2x.png 2x, img/slider-1@3x.png 3x" width="100" height="100">
+                        </div>
+                        <div class="slide__name mb-2">
+                          <span class="d-block">Константин</span>
+                          <span class="d-block text-center">Шлыков</span>
+                        </div>
+                        <div class="slide__descr d-xl-none text-center">Специалист по вопросам получения визы</div>
+                        <div class="slide__text text-center d-xl-none">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis</div>
+                      </div>
+                    </div>
+                    
+                </div>
+
+                <!-- <div class="swiper-button-prev d-none"></div>
+                <div class="swiper-button-next d-none"></div> -->
+            </div>
+
+            <div class="prev d-none d-md-block position-absolute"></div>
+            <div class="next d-none d-md-block position-absolute"></div>
+          </div>
+
+        </div>
+        <!-- reviews -->
+
+        <div class="recommendations mt-5">
+
+          <div class="d-flex mb-5">
+            <div class="empty d-none d-lg-block"></div>
+
+            <div class="heading d-flex align-items-center justify-content-center">
+              <span class="d-block">нас рекомендуют</span>
+            </div>
+
+            <div class="line d-none d-lg-flex align-items-center">
+              <span class="d-block"></span>
+            </div>
+          </div>
+
+          <div class="container">
+
+            <div class="recommendations__content d-flex flex-wrap justify-content-between align-items-between">
+
+              <div class="recommendations__item">
+                <img src="img/recommendations-1.png" srcset="img/recommendations-1@2x.png 2x, img/recommendations-1@3x.png 3x" width="213" height="89">
+              </div>
+
+              <div class="recommendations__item">
+                <img src="img/recommendations-2.png" srcset="img/recommendations-2@2x.png 2x, img/recommendations-2@3x.png 3x" width="237" height="57">
+              </div>
+
+              <div class="recommendations__item">
+                <img src="img/recommendations-3.png" srcset="img/recommendations-3@2x.png 2x, img/recommendations-3@3x.png 3x" width="220" height="102">
+              </div>
+
+              <div class="recommendations__item">
+                <img src="img/recommendations-4.png" srcset="img/recommendations-4@2x.png 2x, img/recommendations-4@3x.png 3x" width="232" height="47">
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+        <!-- recommendations -->
+
+        <div class="prices mt-5 mb-5">
+
+          <div class="prices__heading d-flex mb-4">
+            <div class="line d-none d-lg-flex align-items-center">
+              <span class="d-block"></span>
+            </div>
+            
+            <div class="heading d-flex align-items-center justify-content-center">
+              <span class="d-block">услуги и цены</span>
+            </div>
+
+            <div class="empty d-none d-lg-block"></div>
+          </div>
+          <!-- prices__heading -->
+
+          <div class="prices__content">
+            <div class="container d-flex flex-column align-items-center align-items-md-start">
+
+              <div class="prices__item prices__item_grey prices__item_left-align d-flex flex-column flex-md-row align-items-center">
+
+                <div class="prices__item-sum sum sum_margin d-flex align-items-end order-2 order-md-1 mt-5 mt-md-0">
+                  <span class="sum__number">300</span>
+                  <span class="sum__currency">евро</span>
+                </div>
+
+                <div class="prices__item-service service order-1 order-md-2">
+                  <span class="service__title d-block text-center text-md-left">Консультация по вопросам репатриации в Израиль </span>
+                </div>
+              </div>
+              <!-- prices__item -->
+
+              <div class="prices__item d-flex flex-column flex-md-row align-items-center align-items-md-start w-100">
+
+                <div class="prices__item-sum sum sum_margin d-flex align-items-end order-2 order-md-1 mt-5 mt-md-0">
+                  <span class="sum__number">700</span>
+                  <span class="sum__currency">евро</span>
+                </div>
+
+                <div class="prices__item-service service order-1 order-md-2">
+                  <span class="service__title d-block text-center text-md-left">Проверка документов для получения визы<br> на ПМЖ в Израиль </span>
+                  <span class="service__text d-block text-left">Мы изучим ваши документы, и дадим необходимые советы о том, какие документы надо представить консулу,
+                     и как это сделать так, чтобы он мог максимально быстро вынести по вашему делу положительное решение</span>
+                </div>
+              </div>
+              <!-- prices__item -->
+
+              <div class="prices__item prices__item_grey d-flex flex-column flex-md-row align-items-center align-items-md-start w-100">
+
+                <div class="prices__item-sum sum sum_margin-small d-flex align-items-end order-2 order-md-1 mt-5 mt-md-0">
+                  <span class="sum__number">1500</span>
+                  <span class="sum__currency">евро</span>
+                </div>
+
+                <div class="prices__item-service service order-1 order-md-2">
+                  <span class="service__title d-block text-center text-md-left">Сопровождение в получение визы на ПМЖ в Израиль </span>
+                  <span class="service__text d-block text-left">Вы получите от нас все необходимые инструкции для максимально быстрого и гладкого прохождения процесса.</span>
+                  <span class="service__text d-block text-left">-Мы заранее предоставим вам текст анкеты, которую вам надо будет
+                      заполнять в консульстве. Вы получите возможность заполнить анкету в
+                      черновике, и обсудить с нами все возникающие вопросы. Это избавит вас
+                      от риска отказа из-за неправильно заполненной анкеты</span>
+                  <span class="service__text d-block text-left">- Подготовка к собеседованию с консулом, с целью максимизировать шансы на получение визы</span>
+                  <span class="service__text d-block text-left">Поиск документов по странам СНГ- цена договорная (работаем по всем Странам СНГ)</span>
+                </div>
+              </div>
+              <!-- prices__item -->
+
+              <div class="prices__item d-flex flex-column flex-md-row align-items-center w-100">
+
+                <div class="prices__item-sum sum sum_margin-small d-flex align-items-end order-2 order-md-1 mt-5 mt-md-0">
+                  <span class="sum__number">1000</span>
+                  <span class="sum__currency">евро</span>
+                </div>
+
+                <div class="prices__item-service service order-1 order-md-2">
+                  <span class="service__title d-block text-center text-md-left">Продление Даркона (сроки будут позже) </span>
+                </div>
+              </div>
+              <!-- prices__item -->
+
+            </div>
+            
+          </div>
+          <!-- prices__content -->
+
+          <div class="container d-flex justify-content-center">
+            <button class="prices__btn btn btn_blue">Оставить заявку на консультацию</button>
+          </div>
+
+        </div>
+        <!-- prices -->
+
+        <div class="documents">
+          <div class="documents__background d-flex">
+            <div class="documents__background-img d-none d-xl-block"></div>
+            <div class="documents__background-color flex-grow-1"></div>
+          </div>
+
+          <div class="documents__heading d-flex mb-4 pt-5">
+            <div class="empty empty_long d-none d-lg-block"></div>
+            
+            <div class="heading heading_short d-flex align-items-center justify-content-center">
+              <span class="d-block">Необходимые документы</span>
+            </div>
+
+            <div class="line line_long d-none d-lg-flex align-items-center">
+              <span class="d-block"></span>
+            </div>
+          </div>
+          <!-- documents__heading -->
+
+          <div class="container">
+          <div class="documents__content">
+
+            <div class="documents__item document d-flex flex-column flex-sm-row align-items-center align-items-sm-start">
+              <div class="document__icon d-flex flex-grow-5 ml-5 ml-sm-0" style="border: 1px solid blue;">
+                <span class="icon"></span>
+              </div>
+              <div class="d-flex flex-column">
+                <span class="document__name d-block text-center text-sm-left mb-4">Цветные фотографии размером 3 х 4 см</span>
+                <span class="document__text d-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvina</span>
+              </div>
+            </div>
+            <!-- document -->
+
+            <div class="documents__item document d-flex flex-column flex-sm-row align-items-center align-items-sm-start">
+              <div class="document__icon d-flex flex-grow-5 ml-5 ml-sm-0" style="border: 1px solid blue;">
+                <span class="icon"></span>
+              </div>
+              <div class="d-flex flex-column">
+                <span class="document__name d-block text-center text-sm-left mb-4">Оригиналы следующих документов</span>
+                <span class="document__text d-block">Все имеющиеся в наличии паспорта</span>
+                <span class="document__text d-block">Свидетельство о рождении</span>
+                <span class="document__text d-block">Свидетельство о браке родителей</span>
+                <span class="document__text d-block">Свидетельство о рождении родителей</span>
+                <span class="document__text d-block">Свидетельство о браке бабушки и дедушки родителя- еврея</span>
+                <span class="document__text d-block">Свидетельство о рождении бабушки/дедушки - еврея</span>
+                <span class="document__text d-block">Трудовые книжки</span>
+                <span class="document__text d-block">Военный билет</span>
+                <span class="document__text d-block">Документы об образовании</span>
+                <span class="document__text d-block">Справка о несудимости</span>
+              </div>
+            </div>
+            <!-- document -->
+
+            <div class="documents__item document d-flex flex-column flex-sm-row align-items-center align-items-sm-start pb-5">
+              <div class="document__icon d-flex flex-grow-5 ml-5 ml-sm-0" style="border: 1px solid blue;">
+                <span class="icon"></span>
+              </div>
+              <div class="d-flex flex-column">
+                <span class="document__name d-block text-center text-sm-left mb-4">Документы близких родственников в Израиле (при наличии)</span>
+                <span class="document__text d-block">В том числе, номера их израильских удостоверений личности, домашние адреса и номера телефонов, а также точную дату репатриации в Израиль.</span>
+              </div>
+            </div>
+            <!-- document -->
+          
+          </div>
+          <!-- documents__content -->
+          </div>
+
+        </div>
+        <!-- documents -->
+
+        <div class="info" style="border: 1px solid red;">
+
+          <div class="info__heading d-flex mb-4 mt-4">
+
+            <div class="line d-none d-lg-flex align-items-center">
+              <span class="d-block"></span>
+            </div>
+
+            <div class="heading d-flex align-items-center justify-content-center">
+              <span class="d-block">Cрок и порядок оплаты</span>
+            </div>
+
+            <div class="empty d-none d-lg-block"></div>
+          </div>
+          <!-- info__heading -->
+
+          <div class="info__payment payment">
+            <div class="container">
+
+              <div class="payment__text mb-5">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </div>
+
+              <div class="payment__images d-flex flex-wrap justify-content-around justify-content-xl-between">
+
+                <div class="payment__img mb-3 mb-xl-0">
+                  <img src="img/payment-1.png" srcset="img/payment-1@2x.png 2x, img/payment-1@3x.png 3x" width="345" height="245">
+                </div>
+
+                <div class="payment__img mb-3 mb-xl-0">
+                  <img src="img/payment-1.png" srcset="img/payment-1@2x.png 2x, img/payment-1@3x.png 3x" width="345" height="245">
+                </div>
+
+                <div class="payment__img">
+                  <img src="img/payment-1.png" srcset="img/payment-1@2x.png 2x, img/payment-1@3x.png 3x" width="345" height="245">
+                </div>
+
+              </div>
+
+              <div class="d-flex justify-content-center mt-5">
+                <button class="payment__btn btn btn_blue">Заявка на получение визы</button>
+              </div>
+
+            </div>
+          </div>
+          <!-- payment-->
+
+          <div class="info__heading d-flex mb-4 mt-4">
+            <div class="empty d-none d-lg-block"></div>
+
+            <div class="heading d-flex align-items-center justify-content-center">
+              <span class="d-block">Информационные статьи</span>
+            </div>
+
+            <div class="line d-none d-lg-flex align-items-center">
+              <span class="d-block"></span>
+            </div>
+          </div>
+          <!-- info__heading -->
+
+          <div class="info__posts">
+
+            <div class="container">
+              <div class="payment__images posts d-flex flex-wrap justify-content-around justify-content-xl-between">
+
+                <div class="payment__img post mb-3 mb-xl-0">
+                  <span class="post__name d-block">Milman<br> Islet Research</span>
+                  <img src="img/payment-1.png" srcset="img/payment-1@2x.png 2x, img/payment-1@3x.png 3x" width="345" height="245">
+                  <span class="post__text d-block">Researchers have been monitoring nesting turtle populations on Milman Islet for over 25 years. It is a small sandy cay within the</span>
+                </div>
+
+                <div class="payment__img post mb-3 mb-xl-0">
+                  <span class="post__name d-block">Milman<br> Islet Research</span>
+                  <img src="img/payment-1.png" srcset="img/payment-1@2x.png 2x, img/payment-1@3x.png 3x" width="345" height="245">
+                  <span class="post__text d-block">Researchers have been monitoring nesting turtle populations on Milman Islet for over 25 years. It is a small sandy cay within the</span>
+                </div>
+
+                <div class="payment__img post">
+                  <span class="post__name d-block">Milman<br> Islet Research</span>
+                  <img src="img/payment-1.png" srcset="img/payment-1@2x.png 2x, img/payment-1@3x.png 3x" width="345" height="245">
+                  <span class="post__text d-block">Researchers have been monitoring nesting turtle populations on Milman Islet for over 25 years. It is a small sandy cay within the</span>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+          <!-- info__posts -->
+
+        </div>
+        <!-- info -->
+
+        <div class="contacts d-flex flex-column flex-lg-row" style="border: 1px solid red;">
+          <div class="contacts__content" style="border: 1px solid red;">
+
+          </div>
+          <!-- contacts__content -->
+
+          <div class="contacts__map" style="border: 1px solid red;">
+
+          </div>
+          <!-- contacts__content -->
+
+        </div>
+        <!-- contacts -->
+
 
       </div>
       <!-- main -->
@@ -94,6 +573,8 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="    sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.js"></script>
-  <!-- <script src="js/swiper.js"></script> -->
+  <script src="js/swiper.js"></script>
+
+  <script src="js/navbar-toggler.js"></script>
   </body>
 </html>
