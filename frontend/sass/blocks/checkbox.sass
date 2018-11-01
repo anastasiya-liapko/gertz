@@ -1,0 +1,74 @@
+.checkbox-title
+  font-family: $font-stack-montserrat
+  font-size: 16px
+  font-weight: $bold
+  font-style: normal
+  line-height: 1.2
+  color: #3e4c5b
+    
+.checkbox 
+  display: none
+
+.checkbox-custom 
+  position: relative      
+  width: 30px             
+  height: 30px            
+  border: 1px solid #979797
+  border-radius: 4px
+
+.checkbox-custom,
+.checkbox-label 
+  display: inline-block
+  vertical-align: middle
+
+.checkbox-label
+  margin-left: 5px
+  font-family: $font-stack-montserrat
+  font-size: 16px
+  font-weight: $regular
+  font-style: normal
+  line-height: normal
+  color: #3e4c5b
+
+.checkbox:checked + .checkbox-custom::before
+  content: ""     
+  position: absolute
+  top: 50%
+  left: 50%
+  width: 13px
+  height: 2px
+  margin-top: -1px
+  margin-left: -4px
+  background-color: #3e4c5b
+  transform: rotate(-50deg)
+
+.checkbox:checked + .checkbox-custom::after
+  content: ""     
+  position: absolute
+  top: 50%
+  left: 50%
+  width: 7px
+  height: 2px
+  margin-top: 1px
+  margin-left: -7px
+  background-color: #3e4c5b
+  transform: rotate(45deg)
+
+.checkbox-wrapper
+  width: 100%
+
+.checkbox-wrapper:hover
+  cursor: pointer
+
+@media(min-width: 992px)
+
+  .checkbox-wrapper
+    width: 50%
+
+  .checkbox-title
+    font-size: 20px
+    line-height: 2.2
+
+  .checkbox-label
+    margin-left: 20px
+    font-size: 20px

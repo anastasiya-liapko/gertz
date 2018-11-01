@@ -5,10 +5,11 @@
   color: #ffffff
   border-radius: 0
   cursor: default !important
-  &:focus
-    box-shadow: none
+  // &:focus
+  //   box-shadow: none
 
 .btn_red
+  font-size: 12px
   background-color: rgba(207, 35, 75, 0.74)
 
 .btn_blue
@@ -21,6 +22,7 @@
   font-weight: 900
   letter-spacing: 1px
   transition: all 150ms linear
+  cursor: pointer !important
 
 .btn_hover:hover 
   background: darken($btn-blue, 1.5%)
@@ -30,6 +32,11 @@
   text-decoration: none
   text-shadow: -1px -1px 0 darken($btn-blue, 9.5%)
   transition: all 250ms linear
+
+.btn_hover:focus
+  box-shadow: 0px 2px 0 darken($btn-blue, 5%), 2px 4px 6px darken($btn-blue, 2%)
+.btn_hover-red:focus
+  box-shadow: 0px 2px 0 darken($btn-red, 5%), 2px 4px 6px darken($btn-red, 2%)
 
 .btn_hover-red
   background: lighten($btn-red, 3%)
@@ -51,7 +58,7 @@
 @media(min-width: 576px)
 
   .btn_red
-    font-size: 16px
+    font-size: 14px
 
 @media(min-width: 768px)
 

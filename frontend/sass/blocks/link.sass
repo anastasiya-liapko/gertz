@@ -8,7 +8,12 @@
 
 .link_border
   &:hover
-    color: rgba(255, 255, 255, 0.6)
+    color: $btn-red
+
+.link_button
+  background-color: transparent
+  border-color: transparent
+  cursor: pointer
 
 @media(min-width: 576px)
 
@@ -26,7 +31,7 @@
   
   .link_border:hover 
     // color: #555
-    color: rgb(0, 150, 199)
+    color: rgb(207, 35, 75)
 
   .link_border 
     position: relative
@@ -40,11 +45,17 @@
     width: 0%
     content: '.'
     color: transparent
-    // background: #aaa
-    background: rgba(0, 150, 199, 0.74)
+    background: #aaa
+    background: $btn-red
     // height: 1px
     height: 5px
   
   .link_border:hover:after 
     width: 100%
+
+  .link_post
+    &:hover .post__name
+      text-decoration: underline
+    &:active
+      opacity: 1
   

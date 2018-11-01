@@ -1,16 +1,17 @@
 .header
   width: 100%
   height: auto
-
+  position: fixed
+  z-index: 100
+  
 .header__wrapper
   padding-left: 0
   padding-right: 0
-  background-color: $btn-blue
-
+  
 .header__btn
   width: 100%
   height: 47px
-  margin-top: 8px
+  margin-top: 20px
   margin-bottom: 8px
   margin-left: 15px
   margin-right: 15px
@@ -20,7 +21,46 @@
     width: 100%
     height: 100%
 
+.header__navbar
+  padding-bottom: 0 !important
+  background-color: $btn-blue
+
+.sticky 
+  box-shadow: 0 6px 8px 5px rgba(0, 0, 0, 0.14) !important
+  .header__wrapper
+    justify-content: space-between
+  .navbar-brand
+    display: none !important
+  .header__navbar
+    // width: auto
+    order: 2
+  .navbar-toggler
+    // margin: 0
+    // margin-bottom: 0
+    margin-left: auto
+  .header__btn
+    position: absolute
+    top: 10px
+    width: 73%
+    margin-top: 8px
+    order: 1
+
 @media(min-width: 576px)
+
+  .sticky
+    background-color: $btn-blue
+    box-shadow: 0 2px 4px 1px rgba(0, 0, 0, 0.14)
+    .header__wrapper
+      padding-top: 20px
+      padding-bottom: 80px
+    .header__btn
+      top: 70px
+      left: 50%
+      margin-left: -250px
+      width: 500px
+
+  .header__navbar
+    background-color: transparent
 
   .header__wrapper
     position: relative
@@ -58,6 +98,21 @@
 
 @media(min-width: 1200px)
 
+  .sticky
+    .navbar-collapse
+      width: 65%
+      margin-left: 0
+      margin-right: 0
+    .header__wrapper
+      padding-top: 20px
+      padding-bottom: 20px
+    .header__btn
+      top: 10px
+      left: auto
+      width: 329px
+    .nav-link
+      font-size: 16px
+
   .header__wrapper
     padding-left: 0
     padding-right: 0
@@ -73,3 +128,7 @@
 
   .header__btn
     right: 100px
+
+  .sticky
+    .nav-link
+      font-size: 18px
