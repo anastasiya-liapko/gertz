@@ -10,17 +10,69 @@
   width: 65px !important
   height: 123px !important
   background-size: 65px 123px
-  border: 1px solid white
+  cursor: pointer
 
+.next:hover::before,
+.next:hover::after,
+.prev:hover::before,
+.prev:hover::after
+  opacity: 1
+
+.next:active::before,
+.next:active::after,
+.prev:active::before,
+.prev:active::after
+  opacity: 0.7
+  
 .prev
   top: 50%
   left: 0
   margin-top: -50px
+  &::before
+    content: ""
+    position: absolute
+    top: 30px
+    left: -10px
+    width: 80px
+    height: 5px
+    background-color: #ffffff
+    opacity: 0.3
+    transform: rotate(-45deg)
+  &::after
+    content: ""
+    position: absolute
+    top: 85px
+    left: -10
+    width: 80px
+    height: 5px
+    background-color: #ffffff
+    opacity: 0.3
+    transform: rotate(45deg)
 
 .next
   top: 50%
   right: 0
   margin-top: -50px
+  &::before
+    content: ""
+    position: absolute
+    top: 30px
+    left: -10px
+    width: 80px
+    height: 5px
+    background-color: #ffffff
+    opacity: 0.3
+    transform: rotate(45deg)
+  &::after
+    content: ""
+    position: absolute
+    top: 85px
+    left: -10
+    width: 80px
+    height: 5px
+    background-color: #ffffff
+    opacity: 0.3
+    transform: rotate(-45deg)
 
 @media(min-width: 576px)
 

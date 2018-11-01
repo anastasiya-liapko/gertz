@@ -1,4 +1,50 @@
 .link
   &:hover
     color: #ffffff
+  &:focus
+    outline: none
+  &:active
     opacity: 0.7
+
+.link_border
+  &:hover
+    color: rgba(255, 255, 255, 0.6)
+
+@media(min-width: 576px)
+
+  .link_border
+    &:hover
+      background-color: transparent
+    &:active
+      opacity: 1
+      background-color: transparent
+
+  .link_border,
+  .link_border:after,
+  .link_border:before 
+    transition: all .5s
+  
+  .link_border:hover 
+    // color: #555
+    color: rgb(0, 150, 199)
+
+  .link_border 
+    position: relative
+  
+  .link_border:after
+    position: absolute
+    bottom: 0
+    left: 0
+    right: 0
+    margin: auto
+    width: 0%
+    content: '.'
+    color: transparent
+    // background: #aaa
+    background: rgba(0, 150, 199, 0.74)
+    // height: 1px
+    height: 5px
+  
+  .link_border:hover:after 
+    width: 100%
+  

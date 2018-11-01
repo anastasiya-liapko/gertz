@@ -4,12 +4,49 @@
   line-height: normal
   color: #ffffff
   border-radius: 0
+  cursor: default !important
+  &:focus
+    box-shadow: none
 
 .btn_red
-  background-color: $btn-red
+  background-color: rgba(207, 35, 75, 0.74)
 
 .btn_blue
   background-color: $btn-blue
+
+.btn_hover
+  background: lighten($btn-blue, 3%)
+  border: 1px solid darken($btn-blue, 4%)
+  box-shadow: 0px 2px 0 darken($btn-blue, 5%), 2px 4px 6px darken($btn-blue, 2%)
+  font-weight: 900
+  letter-spacing: 1px
+  transition: all 150ms linear
+
+.btn_hover:hover 
+  background: darken($btn-blue, 1.5%)
+  border: 1px solid rgba(#000, .05)
+  box-shadow: 1px 1px 2px rgba(#fff, .2)
+  color: lighten($btn-blue, 18%)
+  text-decoration: none
+  text-shadow: -1px -1px 0 darken($btn-blue, 9.5%)
+  transition: all 250ms linear
+
+.btn_hover-red
+  background: lighten($btn-red, 3%)
+  border: 1px solid darken($btn-red, 4%)
+  box-shadow: 0px 2px 0 darken($btn-red, 5%), 2px 4px 6px darken($btn-red, 2%)
+  font-weight: 900
+  letter-spacing: 1px
+  transition: all 150ms linear
+
+.btn_hover-red:hover 
+  background: darken($btn-red, 1.5%)
+  border: 1px solid rgba(#000, .05)
+  box-shadow: 1px 1px 2px rgba(#fff, .2)
+  color: lighten($btn-red, 18%)
+  text-decoration: none
+  text-shadow: -1px -1px 0 darken($btn-red, 9.5%)
+  transition: all 250ms linear
 
 @media(min-width: 576px)
 

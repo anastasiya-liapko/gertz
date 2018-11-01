@@ -1,0 +1,96 @@
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?td08ao');
+    src:  url('../fonts/icomoon.eot?td08ao#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?td08ao') format('truetype'),
+      url('../fonts/icomoon.woff?td08ao') format('woff'),
+      url('../fonts/icomoon.svg?td08ao#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-family-tree:before {
+    content: "\e900";
+    color: #fff;
+    font-size: 110px;
+  }
+  .icon-first-aid-kit:before {
+    content: "\e901";
+    color: #0096c7;
+    font-size: 125px;
+  }
+  .icon-girl-photography:before {
+    content: "\e902";
+    color: #fff;
+    font-size: 110px;
+  }
+  .icon-idea:before {
+    content: "\e903";
+    color: #0096c7;
+    font-size: 125px;
+  }
+  .icon-next:before {
+    content: "\e904";
+    color: #fff;
+  }
+  .icon-passport-2:before {
+    content: "\e905";
+    color: #0096c7;
+    font-size: 125px;
+  }
+  .icon-passport:before {
+    content: "\e906";
+    color: #fff;
+    font-size: 110px;
+  }
+  .icon-percent:before {
+    content: "\e907";
+    color: #0096c7;
+    font-size: 125px;
+  }
+  .icon-prev:before {
+    content: "\e908";
+    color: #fff;
+  }
+  .icon-shield:before {
+    content: "\e909";
+    color: #0096c7;
+    font-size: 125px;
+  }
+  .icon-skyline:before {
+    content: "\e90a";
+    color: #0096c7;
+    font-size: 125px;
+  }
+  .icon-world:before {
+    content: "\e90b";
+    color: #0096c7;
+    font-size: 125px;
+  }
+  .icon-map-pin:before {
+    content: "\e90c";
+    color: #0096c7;
+    font-size: 50px;
+    opacity: 0.6;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -28px;
+    margin-left: -28px;
+  }
+  
