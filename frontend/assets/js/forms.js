@@ -2,39 +2,34 @@
 
 $(document).ready(function() {
 
-  $("#myDropzone").dropzone({ url: "index.html" });
-//   Dropzone.options.myDropzone= {
-//     // url: 'upload.php',
-//     url: 'index.html',
-//     autoProcessQueue: false,
-//     uploadMultiple: true,
-//     parallelUploads: 5,
-//     maxFiles: 5,
-//     maxFilesize: 1,
-//     acceptedFiles: '.doc, .pdf',
-//     addRemoveLinks: true,
-//     thumbnailWidth: 50,
-//     thumbnailHeight: 50,
-//     init: function() {
-//         dzClosure = this; // Makes sure that 'this' is understood inside the functions below.
-
-//         // for Dropzone to process the queue (instead of default form behavior):
-//         document.getElementById("px-submit").addEventListener("click", function(e) {
-//             // Make sure that the form isn't actually being sent.
-//             e.preventDefault();
-//             e.stopPropagation();
-//             dzClosure.processQueue();
-//         });
-
-//         //send all the form data along with the files:
-//         this.on("sendingmultiple", function(data, xhr, formData) {
-//             formData.append("job_name", jQuery("#job_name").val());
-//             formData.append("job_position", jQuery("#job_position").val());
-//             formData.append("job_phone", jQuery("#job_phone").val());
-//             formData.append("job_email", jQuery("#job_email").val());
-//         });
-//     }
-// }
+  $("#myDropzone").dropzone({
+    url: "upload.php",
+    paramName: "file", 
+    clickable : true, 
+    uploadMultiple :false, 
+    addRemoveLinks:false, 
+    acceptedFiles: '.pdf, .doc, .docx',
+    previewsContainer: '#dropzonePreview',
+    accept: function(file, done) {
+        console.log('accept');
+        done();
+    },
+    added: function(file) {
+        console.log('added');
+    },
+    success: function(file, responseText, e) {
+        console.log('success');
+        console.log(responseText);
+        $('#file_name').val('');
+        $('#file_name').val(responseText['file_name']);
+        $('#file_preview img').attr('src', '');
+        $('#file_preview img').attr('src', responseText['']);
+        $('#file_preview span').text('');
+        $('#file_preview span').text(responseText['']);
+        $('#myDropzone .placeholder').addClass('d-none');
+        $('#file_preview').removeClass('d-none');
+    },
+});
 
   var required = ['name', 'phone', 'job_name', 'job_position', 'job_phone', 'job_email'];
 
@@ -159,7 +154,8 @@ $(document).ready(function() {
       setErrors(errors);
       event.preventDefault();
     } else {
-      
+      $('#file_preview').addClass('d-none');
+      $('#myDropzone .placeholder').removeClass('d-none');
     }
     
   });

@@ -6,8 +6,8 @@ $("a[href^='#']").click(function(e) {
 	var value;
 	var width = $(window).width();
 	width < 576 ? value = 87 : '';
-	width >= 576 ? value = 160 : '';
-	width >= 1200 ? value = 100 : '';
+	width >= 576 ? value = 110 : '';
+	width >= 1200 ? value = 65 : '';
 	
 	var position = $($(this).attr("href")).offset().top - value;
 
@@ -16,6 +16,7 @@ $("a[href^='#']").click(function(e) {
 	} /* speed */ );
 
 	$(".navbar-collapse").removeClass("show");
+	$('.navbar-toggler-icon').toggleClass('animate');
 });
 
 $(window).scroll(function() {

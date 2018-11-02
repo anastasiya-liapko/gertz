@@ -6,7 +6,7 @@
     <title>Gertz</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- <link rel="shortcut icon" href="img/favicon.png" type="image/png"> -->
+    <link rel="shortcut icon" href="img/gertza.png" type="image/png">
 
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oswald:200,400,500,700&amp;subset=cyrillic" rel="stylesheet">
@@ -28,9 +28,7 @@
         
         <nav class="header__navbar navbar navbar-expand-sm container d-flex flex-sm-wrap flex-xl-nowrap justify-content-between justify-content-xl-start align-items-center">
 
-          <a class="navbar-brand p-0">
-            <img src="img/logo.png" width="751" height="167">
-          </a>
+          <a class="navbar-brand p-0"></a>
 
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -174,8 +172,8 @@
         <div class="reviews">
           <div class="container position-relative">
 
-            <div class="d-flex justify-content-center reviews__btn align-items-center">
-              <div class="btn btn_blue">отзывы</div>
+            <div class="reviews__btn heading d-flex align-items-center justify-content-center">
+              <span class="d-block">Отзывы</span>
             </div>
 
             <!-- Slider main container -->
@@ -302,7 +300,7 @@
 
               <div class="prices__item prices__item_grey prices__item_left-align d-flex flex-column flex-md-row align-items-center">
 
-                <div class="prices__item-sum sum sum_margin d-flex align-items-end order-2 order-md-1 mt-5 mt-md-0">
+                <div class="prices__item-sum sum sum_margin sum_margin-left d-flex align-items-end order-2 order-md-1 mt-5 mt-md-0">
                   <span class="sum__number">300</span>
                   <span class="sum__currency">евро</span>
                 </div>
@@ -446,7 +444,7 @@
 
         <div class="info">
 
-          <div class="info__heading d-flex mb-4 mt-4">
+          <div class="info__heading d-flex mb-4 mt-5">
 
             <div class="line d-none d-lg-flex align-items-center">
               <span class="d-block"></span>
@@ -492,7 +490,7 @@
           </div>
           <!-- payment-->
 
-          <div class="info__heading d-flex mb-4 mt-4">
+          <div class="info__heading d-flex mb-4 mt-5 pt-3">
             <div class="empty d-none d-lg-block"></div>
 
             <div class="heading d-flex align-items-center justify-content-center">
@@ -508,7 +506,7 @@
           <div class="info__posts">
 
             <div class="container">
-              <div class="payment__images posts d-flex flex-wrap justify-content-around justify-content-xl-between">
+              <div class="payment__images posts posts_index position-relative d-flex flex-wrap justify-content-around justify-content-xl-between">
 
                 <a href="#" class="post link link_post mb-3 mb-xl-0">
                   <span class="post__name d-block">Milman<br> Islet Research</span>
@@ -569,9 +567,9 @@
           </div>
           <!-- contacts__content -->
 
-          <div class="contacts__map map position-relative">
+          <a class="contacts__map map position-relative" href="https://goo.gl/maps/PXrowtSvK9Q2">
             <span class="map__icon icon icon-map-pin position-absolute"></span>
-          </div>
+          </a>
           <!-- contacts__content -->
 
         </div>
@@ -587,9 +585,7 @@
           </div>
 
           <div class="footer__logo d-flex align-items-center justify-content-center order-1 order-md-2">
-            <a>
-              <img src="img/footer-logo.png" srcset="img/footer-logo@2x.png 2x, img/footer-logo@3x.png 3x" width="751" height="167">
-            </a>
+            <a></a>
           </div>
 
           <div class="footer__phones d-flex flex-column justify-content-center align-items-center mt-4 mt-md-0 order-2 order-md-3">
@@ -614,65 +610,65 @@
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">Close</button>
             </div>
-            <div class="modal-body d-flex flex-column pb-5">
+            <div class="modal-body d-flex flex-column pb-lg-4">
 
-              <div class="modal-title application__title mb-5">
+              <div class="modal-title application__title">
                 <span>Пожалуйста, укажите контактные данные и менеджер свяжется с вами в ближайшее время:</span>
               </div>
 
               <form id="application__form" action="index.html" enctype="multipart/form-data">
 
-                <div class="field d-flex flex-column mb-4 mb-lg-4">
+                <div class="field d-flex flex-column mb-3">
                   <label class="field__label mb-0" for="name">Ваше имя</label>
                   <input class="field__input" id="name" type="text" name="name">
                   <span id="valid-name" class="error-text"></span>
                 </div>
 
-                <div class="d-flex flex-column flex-lg-row flex-wrap mb-sm-2 mb-lg-4">
+                <div class="d-flex flex-column flex-sm-row flex-wrap mb-2">
                   <span class="checkbox-title w-100 mb-3">У меня есть еврейские корни</span>
 
-                  <label for="parents" class="checkbox-wrapper text-left mb-3">
+                  <label for="parents" class="checkbox-wrapper text-left">
                     <input id="parents" class="checkbox" type="checkbox" name="parents" checked>
                     <span class="checkbox-custom"></span>
                     <span class="checkbox-label">Мать/Отец</span>
                   </label>
 
-                  <label for="spouse" class="checkbox-wrapper text-left mb-3">
+                  <label for="spouse" class="checkbox-wrapper text-left">
                     <input id="spouse" class="checkbox" type="checkbox" name="spouse">
                     <span class="checkbox-custom"></span>
                     <span class="checkbox-label">Супруг/ супруга</span>
                   </label>
 
-                  <label for="grandparents" class="checkbox-wrapper text-left mb-3">
+                  <label for="grandparents" class="checkbox-wrapper text-left">
                     <input id="grandparents" class="checkbox" type="checkbox" name="grandparents">
                     <span class="checkbox-custom"></span>
                     <span class="checkbox-label">Бабушка/дедушка</span>
                   </label>
 
-                  <label for="other" class="checkbox-wrapper text-left mb-4">
+                  <label for="other" class="checkbox-wrapper text-left">
                     <input id="other" class="checkbox" type="checkbox" name="other">
                     <span class="checkbox-custom"></span>
                     <span class="checkbox-label">Бабушка/дедушка</span>
                   </label>
                 </div>
 
-                <div class="field d-flex flex-column mb-4">
+                <div class="field d-flex flex-column">
                   <label class="field__label mb-0" for="phone">Телефон (обязательно)</label>
                   <input class="field__input" id="phone" type="text" name="phone">
                   <span id="valid-phone" class="error-text"></span>
                 </div>
 
-                <div class="field d-flex flex-column mb-4">
+                <div class="field d-flex flex-column mb-3">
                   <label class="field__label mb-0" for="email">Email</label>
                   <input class="field__input" id="email" type="text" name="email">
                   <span id="valid-email" class="error-text"></span>
                 </div>
 
-                <button class="modal__btn btn btn_red btn_hover-red mb-4 mt-sm-5 mt-lg-0" type="submit" name="application">Отправить</button>
+                <button class="modal__btn btn btn_red btn_hover-red mb-3" type="submit" name="application">Отправить</button>
 
               </form>
 
-              <div class="application__descr mb-5">
+              <div class="application__descr">
                 <span>Мы являемся коммерческой организацией, которая оказывает помощь в получении израильского гражданства и Даркона</span>
               </div>
 
@@ -690,42 +686,50 @@
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">Close</button>
             </div>
-            <div class="modal-body">
-              <div class="job__title mb-5">
+            <div class="modal-body pb-md-4 pb-lg-5">
+              <div class="job__title mb-md-3">
                 <span>Заявка на получение вакансии</span>
               </div>
 
               <form id="job__form" action="index.html" enctype="multipart/form-data">
-                <div class="field d-flex flex-column mb-4 mb-lg-5">
+                <div class="field d-flex flex-column">
                   <label class="field__label mb-0" for="job_name">Ваше имя*</label>
                   <input class="field__input" id="job_name" type="text" name="job_name">
                   <span id="valid-job_name" class="error-text"></span>
                 </div>
 
-                <div class="field d-flex flex-column mb-4 mb-lg-5">
+                <div class="field d-flex flex-column">
                   <label class="field__label mb-0" for="job_position">Желаемая должность*</label>
                   <input class="field__input" id="job_position" type="text" name="job_position">
                   <span id="valid-job_position" class="error-text"></span>
                 </div>
 
-                <div class="field d-flex flex-column mb-4 mb-lg-5">
+                <div class="field d-flex flex-column">
                   <label class="field__label mb-0" for="job_phone">Телефон*</label>
                   <input class="field__input" id="job_phone" type="text" name="job_phone">
                   <span id="valid-job_phone" class="error-text"></span>
                 </div>
 
-                <div class="field d-flex flex-column mb-4 mb-lg-5">
+                <div class="field d-flex flex-column">
                   <label class="field__label mb-0" for="job_email">Email*</label>
                   <input class="field__input" id="job_email" type="text" name="job_email">
                   <span id="valid-job_email" class="error-text"></span>
                 </div>
 
-                <div class="field d-flex flex-column justify-content-start flex-sm-row flex-nowrap align-items-sm-center mb-4 mb-lg-5">
+                <div class="field d-flex flex-column justify-content-start flex-sm-row flex-nowrap align-items-sm-center pt-sm-3 pb-3">
                   <span class="field__label field__label_black mr-sm-5 d-block">Резюме*</span>
-                  <div class="" id="myDropzone">Поместите сюда файл с вашим резюме в формате MS WORD или PDF</div>
+                  <div class="flex-grow-1" id="myDropzone">
+                    <span class="placeholder">Поместите сюда файл с вашим резюме в формате MS WORD или PDF</span>
+                    <div id="file_preview" class="d-none">
+                      <img src="">
+                      <span></span>
+                    </div>
+                  </div>
+                  <div id="dropzonePreview" class="hide d-none"></div>
+                  <input class="d-none" id="file_name" type="text" name="file_name" val="">
                 </div>
 
-                <button id="px-submit" class="modal__btn btn btn_red btn_hover-red mb-3 mt-sm-5 mt-lg-0 mb-lg-5" type="submit" name="job">Отправить</button>
+                <button id="px-submit" class="modal__btn btn btn_red btn_hover-red" type="submit" name="job">Отправить</button>
 
               </form>
 

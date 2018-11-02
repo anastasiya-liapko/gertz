@@ -32,11 +32,8 @@
   .navbar-brand
     display: none !important
   .header__navbar
-    // width: auto
     order: 2
   .navbar-toggler
-    // margin: 0
-    // margin-bottom: 0
     margin-left: auto
   .header__btn
     position: absolute
@@ -51,13 +48,19 @@
     background-color: $btn-blue
     box-shadow: 0 2px 4px 1px rgba(0, 0, 0, 0.14)
     .header__wrapper
-      padding-top: 20px
-      padding-bottom: 80px
+      // padding-top: 20px
+      // padding-bottom: 80px
+      padding-top: 0
+      padding-bottom: 60px
     .header__btn
-      top: 70px
+      top: 40px
       left: 50%
       margin-left: -250px
       width: 500px
+    .nav-link
+      font-size: 12px
+    .navbar-collapse
+      height: 50px
 
   .header__navbar
     background-color: transparent
@@ -87,6 +90,10 @@
     margin-top: 6px
     margin-bottom: 6px
 
+  .sticky
+    .header__btn
+      height: 47px
+
 @media(min-width: 992px)
 
   .header__wrapper
@@ -104,10 +111,10 @@
       margin-left: 0
       margin-right: 0
     .header__wrapper
-      padding-top: 20px
-      padding-bottom: 20px
+      padding-top: 10px
+      padding-bottom: 5px
     .header__btn
-      top: 10px
+      top: 0
       left: auto
       width: 329px
     .nav-link
