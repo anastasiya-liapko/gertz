@@ -73,11 +73,13 @@
               <div class="descr__border border"></div>
 
               <div class="descr__title title position-absolute">
+                <div class="blur blur_black position-absolute"></div>
                 <span class="title__blue d-block text-right mr-xl-5">Получение визы на ПМЖ </span>
                 <span class="title__white d-block text-left">в Израиль без отказов</span>
               </div>
 
               <div class="descr__text text position-absolute">
+                <div class="blur blur_short position-absolute"></div>
                 <span class="d-block">сэкономьте ваше</span>
                 <span class="d-block"> время и нервы</span>
               </div> 
@@ -86,7 +88,8 @@
 
             <div class="descr__phones d-flex align-items-center justify-content-center">
               
-              <div class="phones d-flex align-items-center">
+              <div class="phones d-flex align-items-center position-relative">
+                <div class="blur blur_blue position-absolute"></div>
                 <span class="phones__icon icon d-block">
                   <img src="img/phone.png" width="50" height="50">
                 </span>
@@ -469,14 +472,17 @@
               <div class="payment__images d-flex flex-wrap justify-content-around justify-content-xl-between">
 
                 <div class="payment__img mb-3 mb-xl-0">
+                  <div class="border_white border_high"></div>
                   <img src="img/payment-1.png" srcset="img/payment-1@2x.png 2x, img/payment-1@3x.png 3x" width="345" height="245">
                 </div>
 
                 <div class="payment__img mb-3 mb-xl-0">
+                  <div class="border_white border_high"></div>
                   <img src="img/payment-1.png" srcset="img/payment-1@2x.png 2x, img/payment-1@3x.png 3x" width="345" height="245">
                 </div>
 
                 <div class="payment__img">
+                  <div class="border_white border_high"></div>
                   <img src="img/payment-1.png" srcset="img/payment-1@2x.png 2x, img/payment-1@3x.png 3x" width="345" height="245">
                 </div>
 
@@ -511,6 +517,7 @@
                 <a href="#" class="post link link_post mb-3 mb-xl-0">
                   <span class="post__name d-block">Milman<br> Islet Research</span>
                   <div class="payment__img">
+                    <div class="border_white"></div>
                     <img src="img/payment-1.png" srcset="img/payment-1@2x.png 2x, img/payment-1@3x.png 3x" width="345" height="245">
                   </div>
                   <span class="post__text d-block">Researchers have been monitoring nesting turtle populations on Milman Islet for over 25 years. It is a small sandy cay within the</span>
@@ -519,6 +526,7 @@
                 <a href="#" class="post link link_post mb-3 mb-xl-0">
                   <span class="post__name d-block">Milman<br> Islet Research</span>
                   <div class="payment__img">
+                    <div class="border_white"></div>
                     <img src="img/payment-1.png" srcset="img/payment-1@2x.png 2x, img/payment-1@3x.png 3x" width="345" height="245">
                   </div>
                   <span class="post__text d-block">Researchers have been monitoring nesting turtle populations on Milman Islet for over 25 years. It is a small sandy cay within the</span>
@@ -527,6 +535,7 @@
                 <a href="#" class="post link link_post">
                   <span class="post__name d-block">Milman<br> Islet Research</span>
                   <div class="payment__img">
+                    <div class="border_white"></div>
                     <img src="img/payment-1.png" srcset="img/payment-1@2x.png 2x, img/payment-1@3x.png 3x" width="345" height="245">
                   </div>
                   <span class="post__text d-block">Researchers have been monitoring nesting turtle populations on Milman Islet for over 25 years. It is a small sandy cay within the</span>
@@ -691,7 +700,7 @@
                 <span>Заявка на получение вакансии</span>
               </div>
 
-              <form id="job__form" action="index.html" enctype="multipart/form-data">
+              <form id="job__form" action="addResume.php" enctype="multipart/form-data">
                 <div class="field d-flex flex-column">
                   <label class="field__label mb-0" for="job_name">Ваше имя*</label>
                   <input class="field__input" id="job_name" type="text" name="job_name">
@@ -729,7 +738,7 @@
                   <input class="d-none" id="file_name" type="text" name="file_name" val="">
                 </div>
 
-                <button id="px-submit" class="modal__btn btn btn_red btn_hover-red" type="submit" name="job">Отправить</button>
+                <button id="px-submit" class="modal__btn" type="submit" name="job">Отправить</button>
 
               </form>
 

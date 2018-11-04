@@ -15,6 +15,16 @@
   border-color: transparent
   cursor: pointer
 
+.link_post
+  padding-left: 10px
+  padding-right: 10px
+  &:hover
+    text-decoration: none
+    box-shadow: 0 0 0 13px rgba(0, 150, 199, 0.44)
+
+  &:active
+    opacity: 1
+
 @media(min-width: 576px)
 
   .link_border
@@ -53,9 +63,3 @@
   .link_border:hover:after 
     width: 100%
 
-  .link_post
-    &:hover .post__name
-      text-decoration: underline
-    &:active
-      opacity: 1
-  

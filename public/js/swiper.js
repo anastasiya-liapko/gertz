@@ -10,6 +10,7 @@ $(document).ready(function(){
   var mySwiper = new Swiper ('.swiper-container', {
     slidesPerView: slides,
     loop: true,
+    speed: 800,
     
     navigation: {
       nextEl: '.next',

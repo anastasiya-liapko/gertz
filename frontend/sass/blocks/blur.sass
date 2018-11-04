@@ -1,0 +1,52 @@
+.blur_black
+  z-index: -1
+  width: 110%
+  height: 65px
+  margin-left: -5%
+  box-shadow: 0 0 35px 24px rgba(0, 0, 0, 0.6)
+  background-color: rgba(0, 0, 0, 0.6) 
+  filter: blur(10px)
+
+.blur_blue
+  width: 100%
+  height: 65px
+  box-shadow: 0 0 35px 24px rgba(0, 150, 199, 0.6)
+  background-color: rgba(0, 150, 199, 0.6)
+  filter: blur(10px)
+
+.blur_short
+  width: 70%
+  left: 15%
+  height: 60px
+  box-shadow: 0 0 35px 24px rgba(0, 150, 199, 0.6)
+  background-color: rgba(0, 150, 199, 0.6)
+  filter: blur(10px)
+
+@media(min-width: 576px)
+
+  .blur_black
+    height: 80px
+
+@media(min-width: 768px)
+
+  .blur_blue
+    width: 85%
+
+  .blur_black
+    height: 100px
+
+@media(min-width: 1200px)
+
+  .blur_short
+    height: 90px
+
+  .blur_black
+    height: 120px
+
+@media(min-width: 1640px)
+
+  .blur_short
+    height: 100px
+
+  .blur_black
+    height: 150px

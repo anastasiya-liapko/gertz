@@ -20,14 +20,20 @@ $(document).ready(function() {
     success: function(file, responseText, e) {
         console.log('success');
         console.log(responseText);
-        $('#file_name').val('');
-        $('#file_name').val(responseText['file_name']);
-        $('#file_preview img').attr('src', '');
-        $('#file_preview img').attr('src', responseText['']);
-        $('#file_preview span').text('');
-        $('#file_preview span').text(responseText['']);
-        $('#myDropzone .placeholder').addClass('d-none');
-        $('#file_preview').removeClass('d-none');
+        var obj = jQuery.parseJSON(responseText);
+        if (obj.status===0) {
+            console.log('Файл загружен.',obj);
+            $('#file_name').val('');
+            $('#file_name').val(responseText['file_name']);
+            $('#file_preview img').attr('src', '');
+            $('#file_preview img').attr('src', responseText['doc_icon']);
+            $('#file_preview span').text('');
+            $('#file_preview span').text(responseText['doc_name']);
+            $('#myDropzone .placeholder').addClass('d-none');
+            $('#file_preview').removeClass('d-none');
+        }else{
+            console.log(obj.msg);
+        }
     },
 });
 
