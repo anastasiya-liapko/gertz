@@ -1,8 +1,25 @@
 .swiper-container 
   height: 380px
+  
+.slide__border
+  width: 100%
+  height: 100%
+  top: 0
+  left: 0
+  border: solid 13px rgba(0, 150, 199, 0.44) !important
 
 .swiper-slide-active
-  border: 13px solid rgba(0, 150, 199, 0.44) !important
+  .slide__border
+    z-index: -1
+    display: block !important
+    animation-name: border
+    animation-duration: 2s
+
+@keyframes border
+    0%
+      opacity: 0
+    100%
+      opacity: 1
 
 .prev,
 .next
@@ -90,38 +107,105 @@
 
 @media(min-width: 1200px)
 
+  @keyframes name
+    0%
+      font-size: 24px
+      transform: translateY(150px)
+    100%
+      font-size: 36px
+      transform: translateY(0)
+
+  @keyframes name-2
+    0%
+      font-size: 36px
+    100%
+      font-size: 24px
+
+  @keyframes img
+    0%
+      width: 100px
+      height: 100px
+      transform: translateY(150px)
+    100%
+      width: 200px
+      height: 200px
+      transform: translateY(0)
+
+  @keyframes img-2
+    0%
+      width: 200px
+      height: 180px
+    100%
+      width: 100px
+      height: 100px
+
+  @keyframes text
+    0%
+      transform: scale(0, 0)
+    100%
+      transform: scale(0, 50px)
+
+  @keyframes text-2
+    0%
+      width: 420px
+      font-size: 18px
+    100%
+      width: 0
+      font-size: 0
+      
+  @keyframes descr
+    0%
+      margin-top: 150px
+      transform: scale(0, 0)
+    100%
+      margin-top: 0
+      transform: scale(0, 50px)
+
+  @keyframes descr-2
+    0%
+      width: 420px
+      font-size: 14px
+    100%
+      width: 0
+      font-size: 0
+
   .swiper-container 
     width: 1140px
     height: 533px
 
-  .swiper-slide-next~.slide,
   .swiper-slide-active
     width: 319px !important
+    animation-name: slide !important
+    animation-duration: 1s !important
+    .slide__border
+      display: none !important
 
   .swiper-slide-next
     width: 500px !important
-
-  .swiper-slide-active
-    border: none !important
-
-  .swiper-slide-next .slide__descr,
-  .swiper-slide-next .slide__text
-    display: block !important
-    
-  .swiper-slide-next .slide__text
-    padding-right: 40px
-    padding-left: 40px
-
-  .swiper-slide-next.slide
-    border: 13px solid rgba(0, 150, 199, 0.44) !important
-
-  .swiper-slide-next .slide__name
-    font-size: 36px
-
-  .swiper-slide-next
+    .slide__descr,
+    .slide__text
+      display: block !important
+    .slide__descr
+      animation-name: descr
+      animation-duration: 1s
+    .slide__text
+      padding-right: 40px
+      padding-left: 40px
+      animation-name: text
+      animation-duration: 1s
+    .slide__name
+      font-size: 36px
+      animation-name: name
+      animation-duration: 1s
     img
       width: 200px !important
       height: 200px !important
+      animation-name: img
+      animation-duration: 1s
+    .slide__border
+      display: block !important
+      animation-name: border
+      animation-duration: 2s
 
 @media(min-width: 1640px)
 

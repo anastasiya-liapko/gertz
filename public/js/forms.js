@@ -37,7 +37,7 @@ $(document).ready(function() {
     },
 });
 
-  var required = ['name', 'phone', 'job_name', 'job_position', 'job_phone', 'job_email'];
+  var required = ['name', 'phone', 'job_name', 'job_position', 'job_phone', 'job_email', 'file_name'];
 
   var errorsTexts = 
   {
@@ -148,7 +148,11 @@ $(document).ready(function() {
     $.each(required, function(index, val) {
       if (data[val] === '') {
         errors[val] = 'Это обязательное поле';
+        if (val === 'file_name') {
+          $('#myDropzone').css('border', '1px solid #f5515f');
+        }
       }
+      
     })
 
     if (data['job_phone'] !== '') {
